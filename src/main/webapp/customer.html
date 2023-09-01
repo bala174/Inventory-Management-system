@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Customer</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+</head>
+<style>
+body {
+	background-image: url("image/inventory.png");
+	background-repeat: no-repeat;
+	background-size: 1750px;
+}
+
+.cen {
+	display: flex;
+	float: right;
+}
+</style>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<header>
+				<a href="index.html"><button type="submit"
+						class="cen btn btn-primary mt-4 me-3">Logout</button></a>
+			</header>
+		</div>
+		<div class="row mt-5">
+			<div class="col-3">
+				<div class="card">
+					<img src="image/product.png" width="358px" height="355px">
+					<h4 class="text-danger mt-2">PRODUCT DETAILS</h4>
+					<p>Here customer can see the details of product like product_id
+						and product_name</p>
+					<form action="ViewPro" method="post">
+						<button type="submit" class="btn btn-info mb-2">Get product
+							details</button>
+					</form>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="card">
+					<img src="image/customer.jpg" width="355px" height="355px">
+					<h4 class="text-danger mt-2">CUSTOMER DETAILS</h4>
+					<p>Here customer can see the details of Customer like customer_id
+						, customer_name, Location.</p>
+					<form action="ViewCus" method="post">
+						<button type="submit" class="btn btn-info mb-2">Get Customer
+							details</button>
+					</form>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="card">
+					<img src="image/salesinfo.jpg" width="355px" height="355px">
+					<h4 class="text-danger mt-2">SALES INFO DETAILS</h4>
+					<p>Here customer can see the details of Sales info. By this the can buy that product when they needed.</p>
+					<form action="ViewSale" method="post">
+						<button type="submit" class="btn btn-info mb-2">Get Sales Info
+							details</button>
+					</form>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="card">
+					<img src="image/stock.png" width="358px" height="355px">
+					<h4 class="text-danger mt-2">STOCK DETAILS</h4>
+					<p>Here customer can see the details of stock. So that it is easy to purchase a product.</p>
+					<form action="ViewStocks" method="post">
+						<button type="submit" class="btn btn-info mb-2">Get Stock
+							details</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
